@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Giới thiệu Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-image: url(./image/background_header.jpg);
+      }
+      h1 {
+        text-align: center;
+      }
+
+      .cs-banner {
+        position: relative;
+      }
+
+      .cs-banner_image img {
+        object-position: center bottom;
+        width: 100%;
+        height: 60%;
+        filter: brightness(45%);
+      }
+
+      .cs-banner_content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+        color: white;
+      }
+
+      .cs-banner_heading {
+        width: 50%;
+        margin: 0 auto;
+        font-size: 80px;
+        color: white;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .cs-banner_description {
+        padding: 50px;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 30px;
+        line-height: 1.5em; /* Khoảng cách giữa các dòng văn bản */
+        color: white;
+      }
+      .grid_column {
+        box-sizing: border-box;
+        float: left;
+        padding: 0 10px;
+      }
+
+      .grid_column:nth-child(1) {
+        width: 30%;
+      }
+
+      .grid_column:nth-child(2) {
+        width: 70%;
+      }
+      .footer {
+        width: 100%;
+        margin: 0 auto;
+      }
+      .cs-about_heading {
+        font-size: 25px;
+        padding: 20px;
+      }
+      .cs-about_description h3 {
+        font-size: 30px;
+      }
+      .cs-about_description p {
+        font-size: 30px;
+      }
+      .cs-banner2 {
+        position: relative;
+      }
+      .cs-anh img {
+        object-position: center bottom;
+        width: 100%;
+        height: 50%;
+        filter: brightness(45%);
+      }
+
+      .cs-caunoi {
+        position: relative;
+        text-align: center;
+        margin-top: -10%;
+        transform: translateY(-50%);
+      }
+
+      .cs-cautren {
+        width: 95%;
+        margin: 0 auto;
+        font-size: 45px;
+        line-height: 1.5em;
+        color: yellow;
+        font-family: "Open Sans", sans-serif;
+      }
+
+      .cs-cauduoi {
+        padding: 50px;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 40px;
+
+        color: white;
+      }
+      .grid_cot {
+        box-sizing: border-box;
+        float: left;
+        padding: 0 10px;
+      }
+
+      .grid_cot:nth-child(1) {
+        width: 70%;
+      }
+
+      .grid_cot:nth-child(2) {
+        width: 30%;
+      }
+      .grid {
+        padding: 0px;
+      }
+      .cs-grid_description p {
+        font-size: 30px;
+        margin-top: 50px;
+        margin-left: 150px;
+      }
+      .cs-about h1 {
+        margin-top: -70px;
+        font-size: 50px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 5px 0;
+      }
+
+      footer p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-left: 30px;
+      }
+
+      footer ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: 30px;
+      }
+
+      footer ul li {
+        margin-bottom: 10px;
+      }
+
+      .bottom-bar {
+        background-color: #222;
+        padding: 15px 0;
+        color: #aaa;
+        font-size: 14px;
+      }
+
+      .social-icons li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .social-icons li:last-of-type {
+        margin-right: 0;
+      }
+
+      .social-icons a {
+        color: #fff;
+        font-size: 24px;
+      }
+
+      .social-icons a:hover {
+        color: #ccc;
+      }
+
+      .fa-facebook:before {
+        content: "\f09a";
+      }
+
+      .fa-twitter:before {
+        content: "\f099";
+      }
+
+      .fa-instagram:before {
+        content: "\f16d";
+      }
+
+      .fa-youtube:before {
+        content: "\f167";
+      }
+      footer {
+        clear: both;
+      }
+
+      .trangchu button {
+        border-radius: 10px;
+        width: 10%;
+        border: none;
+        height: 50px;
+        color: whitesmoke;
+        background-color: whitesmoke;
+      }
+
+      .trangchu button:hover {
+        background-color: #333;
+        color: yellow;
+        transition: 1.2s;
+        outline: 1px solid salmon;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header></header>
+
+    <main>
+      <section class="cs-banner">
+        <div class="cs-banner_image">
+          <img src="image/slide_qc/4.jpg" alt="Images" />
+        </div>
+        <div class="cs-banner_content">
+          <h1 class="cs-banner_heading">Welcome to TLN BookStore Online</h1>
+          <a class="trangchu" href="./trangchu.html"
+            ><button>TRANG CHỦ</button></a
+          >
+          <p class="cs-banner_description">
+            Nơi đem đến cho bạn những cuốn sách tuyệt vời nhất. Với kho sách đa
+            dạng và chất lượng cao, bạn sẽ tìm thấy những kiến thức bổ ích và
+            những trang sách đầy cảm hứng để khám phá.
+          </p>
+        </div>
+      </section>
+      <section class="cs-about">
+        <div class="container container--medium">
+          <div class="grid">
+            <div class="grid_column one">
+              <div class="cs-about_content">
+                <h2 class="cs-about_heading">
+                  TLN BookStore Online ra đời<br />với mục đích gì?
+                </h2>
+                <div class="cs-about_image">
+                  <img
+                    src="image/gioithieu_shop/1492236391.png"
+                    alt=""
+                    style="width: 350px"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="grid_column two">
+              <div class="cs-about_description">
+                <h3>Tại sao chúng tôi ra đời</h3>
+                <p>
+                  Chúng tôi thành lập TLN BookStore Online với mong muốn đem đến
+                  cho độc giả những trang sách đầy cảm hứng và kiến thức bổ ích.
+                  Chúng tôi tin rằng sách là món quà tuyệt vời nhất mà chúng ta
+                  có thể tặng cho bản thân và cho những người mình yêu thương.
+                </p>
+                <h3>Các giá trị của chúng tôi</h3>
+                <p>
+                  Tại TLN BookStore Online, chúng tôi cam kết cung cấp cho bạn
+                  những sản phẩm sách đa dạng và chất lượng cao. Chúng tôi luôn
+                  quan tâm đến sự hài lòng của khách hàng và mong muốn mang lại
+                  trải nghiệm mua sách trực tuyến tốt nhất cho bạn.
+                </p>
+                <p>
+                  (<a
+                    class="trangchu"
+                    href="./trangchu.html"
+                    style="text-decoration: underline"
+                    >tham khảo khảo tại cửa hàng của chúng tôi</a
+                  >)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cs-banner2">
+        <div class="cs-anh">
+          <img src="image/gioithieu_shop/Untitled design.png" alt="Images" />
+        </div>
+        <div class="cs-caunoi">
+          <h1 class="cs-cautren">
+            "Một quyển sách hay là đời sống xương máu quý giá của một tinh thần
+            ướp hương và cất kín cho mai sau."
+          </h1>
+          <p class="cs-cauduoi">J.Milton</p>
+        </div>
+      </section>
+
+      <section class="cs-about">
+        <h1>TLN BOOKSTORE</h1>
+        <div class="grid">
+          <div class="grid_cot one">
+            <div class="cs-grid_description">
+              <p>
+                Là một cửa hàng sách trực tuyến được thành lập tại Việt Nam. Với
+                mục tiêu cung cấp những cuốn sách chất lượng cao và đa dạng đến
+                người đọc, TLN Bookstore tự hào là địa chỉ mua sắm sách trực
+                tuyến uy tín và tin cậy cho các độc giả yêu sách.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid_cot two">
+            <div class="cs-grid_image">
+              <img src="image/logo.png" alt="" style="width: 250px" />
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid_cot one">
+            <div class="cs-grid_description">
+              <p>
+                Có hơn 10 năm kinh nghiệm trong lĩnh vực sách, từng phục vụ hàng
+                ngàn khách hàng và được đánh giá cao bởi chất lượng sản phẩm,
+                dịch vụ chăm sóc khách hàng và đội ngũ nhân viên chuyên nghiệp.
+              </p>
+            </div>
+          </div>
+          <div class="grid_cot two">
+            <div class="cs-grid_image">
+              <img
+                src="image/gioithieu_shop/14-kinh-nghiem-ban-hang-online-ma-moi-doanh-nghiep-se-can.jpg"
+                alt=""
+                style="width: 250px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid_cot one">
+            <div class="cs-grid_description">
+              <p>
+                Với đa dạng thể loại sách từ văn học, kinh tế, khoa học, văn
+                hoá... và nhiều tác giả nổi tiếng trong và ngoài nước, TLN
+                Bookstore luôn cập nhật những cuốn sách mới nhất và được yêu
+                thích nhất trên thị trường.
+              </p>
+            </div>
+          </div>
+          <div class="grid_cot two">
+            <div class="cs-grid_image">
+              <img
+                src="image/gioithieu_shop/IMG_1433.jpg"
+                alt=""
+                style="width: 250px"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid_cot one">
+            <div class="cs-grid_description">
+              <p>
+                Còn có dịch vụ giao hàng tận nơi, đảm bảo an toàn và nhanh chóng
+                đến tay khách hàng. Nếu bạn đang tìm kiếm một địa chỉ tin cậy để
+                mua sách trực tuyến, TLN Bookstore là lựa chọn tuyệt vời cho
+                bạn.
+              </p>
+            </div>
+          </div>
+          <div class="grid_cot two">
+            <div class="cs-grid_image">
+              <img
+                src="image/gioithieu_shop/pngtree-delivery-man-vector-illustration-png-image_3461394.jpg"
+                alt=""
+                style="width: 250px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Công ty TNHH Thương Mại Truyền Thông TLN</strong></p>
+            <ul>
+              <li>Địa chỉ: Đại Học Công Nghiệp Thực Phẩm TPHCM</li>
+              <li>Điện thoại: 0886 888 999</li>
+              <li>Email: vanphongphamtln@gmail.com</li>
+              <li>Website: www.tln.vn</li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-right">
+            <p><strong>Kết nối với chúng tôi:</strong></p>
+            <ul class="social-icons">
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-facebook" style="color: #0602ed"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-twitter" style="color: #ffea00"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-instagram" style="color: #00ffcc"></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-brands fa-youtube" style="color: #f50000"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-bar text-center">
+        <p>Bản quyền &copy; TNL Bookstore Online 2023. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

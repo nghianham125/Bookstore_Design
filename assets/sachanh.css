@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62, 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  background-image: url(https://www.myfreetextures.com/wp-content/uploads/2014/10/seamless-wood4-900x900.jpg);
+}
+/* HEADRER */
+.nav {
+  width: 1300px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.logo p {
+  font-size: 30px;
+}
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.search {
+  flex: 1;
+}
+.search input {
+  outline: none;
+  border: none;
+  width: calc(100% - 20px);
+  padding: 10px 0;
+  font-size: 1.3rem;
+  border-radius: 8px;
+}
+.search input:hover {
+  background-color: whitesmoke;
+  transition: 1s;
+}
+.store ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.store ul li {
+  margin: 0 10px;
+}
+.store ul li a:hover {
+  color: aqua;
+  transition: 0.5s;
+}
+.store ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.store_icon {
+  text-align: center;
+}
+/* ====================== */
+/* MAIN */
+main {
+  width: 1300px;
+  margin: 0 auto;
+}
+.all {
+  width: 100%;
+  height: 1500px;
+}
+/* MAIN LEFT - MAIN */
+.main_left {
+  width: 25%;
+  height: 100%;
+  background-color: aliceblue;
+  float: left;
+  clear: left;
+}
+.text_main_left {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.list_main_left ul li {
+  list-style: none;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+.list_main_left ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+.list_main_left ul li a:hover {
+  color: orange;
+  padding-left: 10px;
+  transition: 0.2s;
+}
+.list_main_left ul li ul li {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.list_main_left ul li ul li ul li {
+  padding-left: 20px;
+}
+/* MAIN RIGHT - MAIN */
+/* ROW 1 */
+.main_right {
+  width: 75%;
+  height: 100%;
+  float: right;
+  padding-left: 20px;
+}
+.text_main_right {
+  width: 100%;
+  height: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aquamarine;
+}
+.list_main_right {
+  width: 100%;
+  height: 95%;
+}
+.row1 {
+  width: 100%;
+  height: 25%;
+}
+.row1 ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.row1 ul li {
+  width: 25%;
+  height: 100%;
+  border-top: 10px solid aquamarine;
+  border-bottom: 10px solid aquamarine;
+  border-radius: 20px;
+  padding-top: 5px;
+}
+.img {
+  width: 50%;
+  height: 53%;
+  margin: 0 auto;
+}
+.sp {
+  width: 100%;
+  height: 30%;
+}
+.img img {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  width: 100%;
+}
+.title p {
+  color: black;
+}
+.rate_star {
+  width: 100%;
+  color: yellow;
+}
+.cost_sp {
+  width: 100%;
+  display: flex;
+}
+.gia_goc {
+  text-decoration: line-through;
+}
+.gia_giam {
+  color: red;
+}
+.cost_sp,
+.gia_goc,
+.gia_giam {
+  padding-right: 10px;
+}
+.sale {
+  background-color: red;
+  color: white;
+  width: 50px;
+  border-radius: 10px;
+  padding-left: 5px;
+}
+.button_muangay {
+  width: 100%;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  display: none;
+  position: absolute;
+  left: 25px;
+}
+.button_muangay button {
+  width: 80%;
+  height: 40px;
+  border: none;
+  background-color: red;
+  border-radius: 10px;
+}
+.row1 ul li {
+  position: relative;
+}
+.row1 ul li:hover {
+  background-color: aliceblue;
+  transition: 0.5s;
+}
+.row1 ul li:hover .button_muangay {
+  display: block;
+}
+.row1 ul li .button_muangay button:hover {
+  background-color: gray;
+  transition: 0.75s;
+}
+.button_muangay:hover a,
+.button_muangay:hover i {
+  color: yellow;
+  transition: 0.75s;
+}
+.button_muangay button a,
+.button_muangay button i {
+  text-decoration: none;
+  color: white;
+}
+.title p,
+.title .rate_star,
+.cost_sp {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+/* ROW 2 <- MAIN RIGHT*/
+.row2 {
+  width: 100%;
+  height: 25%;
+}
+.row2 ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.row2 ul li {
+  width: 25%;
+  height: 100%;
+  border-top: 10px solid aquamarine;
+  border-bottom: 10px solid aquamarine;
+  border-radius: 20px;
+  padding-top: 5px;
+}
+.row2 ul li {
+  position: relative;
+}
+.row2 ul li:hover {
+  background-color: aliceblue;
+  transition: 0.75s;
+}
+.row2 ul li:hover .button_muangay {
+  display: block;
+}
+.row2 ul li .button_muangay button:hover {
+  background-color: gray;
+  transition: 0.75s;
+}
+/* ROW 3 - MAIN RIGHT*/
+.row3 {
+  width: 100%;
+  height: 25%;
+}
+.row3 ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.row3 ul li {
+  width: 25%;
+  height: 100%;
+  border-top: 10px solid aquamarine;
+  border-bottom: 10px solid aquamarine;
+  border-radius: 20px;
+  padding-top: 5px;
+}
+.row3 ul li {
+  position: relative;
+}
+.row3 ul li:hover {
+  background-color: aliceblue;
+  transition: 0.75s;
+}
+.row3 ul li:hover .button_muangay {
+  display: block;
+}
+.row3 ul li .button_muangay button:hover {
+  background-color: gray;
+  transition: 0.75s;
+}
+/* ROW 4 - MAIN RIGHT */
+.row4 {
+  width: 100%;
+  height: 25%;
+}
+.row4 ul {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.row4 ul li {
+  width: 25%;
+  height: 100%;
+  border-top: 10px solid aquamarine;
+  border-bottom: 10px solid aquamarine;
+  border-radius: 20px;
+  padding-top: 5px;
+}
+.row4 ul li {
+  position: relative;
+}
+.row4 ul li:hover {
+  background-color: aliceblue;
+  transition: 0.75s;
+}
+.row4 ul li:hover .button_muangay {
+  display: block;
+}
+.row4 ul li .button_muangay button:hover {
+  background-color: gray;
+  transition: 0.75s;
+}
+/* PAGE NUMBER */
+.page_number {
+  width: 100%;
+  height: 2%;
+  display: flex;
+  justify-content: center;
+  padding-top: 3px;
+}
+.page_number ul {
+  display: flex;
+  list-style: none;
+}
+.page_number ul li {
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.page_number ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.page_number ul li:hover {
+  background-color: yellow;
+  transition: 0.75s;
+}
+/* ====================== */
+/* FOOTER */
+footer {
+  width: 100%;
+  padding-top: 50px;
+}
+/* FOOTER 1 - FOOTER */
+.footer1 {
+  width: 1300px;
+  height: 100px;
+  background-color: gray;
+  margin: 0 auto;
+}
+.nav_footer1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.text_footer1 {
+  width: 30%;
+  height: 100%;
+  color: white;
+  display: flex;
+  padding-top: 20px;
+}
+.text_footer1 img {
+  width: 30%;
+  height: 70%;
+}
+.text_footer1 h2 {
+  width: 70%;
+  font-size: 25px;
+  padding: 10px;
+}
+.input_footer1 {
+  width: 50%;
+  height: 100%;
+  padding-top: 20px;
+}
+.input_footer1 input {
+  width: 95%;
+  height: 60%;
+  border: none;
+  border-radius: 10px;
+}
+.input_footer1 input:hover {
+  background-color: aliceblue;
+  transition: 0.75s;
+}
+.button_footer1 {
+  width: 20%;
+  padding-top: 20px;
+}
+.button_footer1 button {
+  width: 80%;
+  height: 60%;
+  border: none;
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  background-color: orange;
+}
+.button_footer1 button:hover {
+  background-color: rgb(190, 140, 47);
+  color: rgb(94, 90, 90);
+  transition: 0.75s;
+  font-size: 40px;
+}
+/* FOOTER 2 - FOOTER */
+.footer2 {
+  width: 100%;
+  height: 350px;
+  padding-top: 10px;
+  background-color: rgb(25, 75, 75);
+  color: white;
+}
+.last_footer2 {
+  width: 1300px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cty,
+.dichvu,
+.hotro,
+.taikhoan {
+  width: 25%;
+  text-align: center;
+}
+.logo_cty,
+.text_cty,
+.list_cty {
+  width: 100%;
+}
+.logo_cty img {
+  width: 100px;
+  height: 100px;
+}
+.list_cty ul,
+.list_dichvu ul,
+.list_hotro ul,
+.list_taikhoan ul {
+  list-style: none;
+}
+.text_cty,
+.text_dichvu,
+.text_hotro,
+.text_taikhoan {
+  font-size: 22px;
+}
+.list_cty ul li,
+.list_dichvu ul li,
+.list_hotro ul li,
+.list_taikhoan ul li {
+  padding-top: 10px;
+  font-size: 20px;
+}
+.list_cty ul li:hover,
+.list_dichvu ul li:hover,
+.list_hotro ul li:hover,
+.list_taikhoan ul li:hover {
+  color: orange;
+  transition: 0.75s;
+  font-size: 24px;
+}
+
+/* RESPONSIVE */
+@media only screen and (max-width: 739px) {
+  /* Header - mobile */
+  header {
+    width: 100%;
+  }
+  .nav {
+    width: 100%;
+  }
+  .logo,
+  .store {
+    width: 50%;
+  }
+  .search {
+    display: none;
+  }
+  .logo a {
+    width: 50%;
+  }
+  .logo a p {
+    font-size: 20px;
+  }
+  .store ul li {
+    width: 33, 3%;
+  }
+  .store ul li a {
+    font-size: 16px;
+  }
+  /* main */
+  main {
+    width: 100%;
+    height: 100%;
+  }
+  .all {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  /* main-left */
+  .main_left {
+    width: 100%;
+  }
+  .list_main_left ul li ul li,
+  .list_main_left ul li {
+    text-align: center;
+    padding-left: 0;
+  }
+  /* main-right */
+  .main_right {
+    width: 100%;
+    padding-left: 0;
+  }
+  .list_main_right {
+    width: 100%;
+  }
+  .list_main_right div ul {
+    flex-direction: column;
+  }
+  .list_main_right div ul li {
+    width: 100%;
+  }
+  .list_main_right div ul li:hover .button_muangay {
+    display: none;
+  }
+  .sp {
+    text-align: center;
+  }
+  .cost_sp {
+    justify-content: center;
+  }
+  /* footer */
+  footer {
+    width: 100%;
+  }
+  /* footer1 */
+  .footer1 {
+    width: 100%;
+  }
+  .nav_footer1 {
+    width: 100%;
+  }
+  .text_footer1,
+  .input_footer1,
+  .button_footer1 {
+    width: calc(100% / 3);
+  }
+  .text_footer1 h2 {
+    font-size: 12px;
+  }
+  .text_footer1 img {
+    width: 60px;
+  }
+  .button_footer1 button {
+    font-size: 16px;
+  }
+  /* footer2 */
+  .footer2 {
+    width: 100%;
+    height: 100%;
+  }
+  .last_footer2 {
+    width: 100%;
+    flex-direction: column;
+  }
+  .cty,
+  .dichvu,
+  .hotro,
+  .taikhoan {
+    padding-top: 10px;
+    width: 100%;
+  }
+}
